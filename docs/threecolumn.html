@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<!--
+	Synchronous by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Synchronous by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			
+			<!-- Header -->
+			<div id="header">
+				<div class="container"> 
+					
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">WEKA</a></h1>
+						<span><strong>Download e instalação</strong></span>
+					</div>
+					
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Homepage</a></li>
+							<li class="active"><a href="threecolumn.html">TURORIAL</a></li>
+							<!--<li><a href="twocolumn1.html">Left Sidebar</a></li>
+							<li><a href="twocolumn2.html">Right Sidebar</a></li>
+							<li><a href="onecolumn.html">No Sidebar</a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /Header -->
+			
+			<div id="page">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<section id="sidebar1">
+								<header>
+									<h2>Sidebar 1</h2>
+								</header>
+							<!--	<ul class="style3">
+									<li class="first">
+										<p class="date"><a href="#">Oct <b>03</b></a></p>
+										<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent urna congue rutrum. </a></p>
+									</li>
+									<li>
+										<p class="date"><a href="#">Sep <b>30</b></a></p>
+										<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent urna congue rutrum.</a></p>
+									</li>
+									<li>
+										<p class="date"><a href="#">Sep <b>27</b></a> </p>
+										<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent urna congue rutrum.</a></p>
+									</li>
+								</ul>-->
+							</section>
+						</div>
+						<div class="6u skel-cell-important">
+							<section id="content" >
+								<header>
+									<h2>Baixando Weka</h2>
+								</header>
+								<p>A instalação do Weka é muito simples e rápida. Nesse artigo abordamos o processo.</p>
+								<a href="https://www.cs.waikato.ac.nz/ml/weka/" class="button">Download</a>
+								<br/>
+								<br/>
+								<br/>
+								<header>
+									<h2>Weka Explorer</h2>
+									<p>Clicando na aplicação Explorer é exibida tela inicial com a aba Preprocess marcada.<br/>
+
+										È nessa tela que iremos trabalhar com o pré-processamento da nossa base.<br/>
+										
+										Na fase de pré-processamento envolve trabalhar no dado antes de realizar algum experimento.<br/>
+										
+										Por exemplo, nessa tela é possível remover algum atributo da base de dados, aplicar um filtro de normalização ou discretiza algum atributo.<br/>
+										
+										Essa tela exibe estatísticas importantes sobre a base de dados, informações como quantidade instâncias por classe, o tipo de um atributo, a quantidade de atributos faltantes, etc.<br/>
+										
+										Veremos algumas tarefas de pré-processamento nas seções seguintes.<br/>
+										
+										Clique em Open File e carregue uma base de dados de exemplo para visualizar as informações.<br/>
+										
+										Dica: O Weka contém várias bases de dados de exemplos, basta navegar até o diretório de instalação e acessar a pasta data. Veja:<br/><br/></p>
+										<div> <a href="#" class="image full"><img src="images/explorer.gif" alt=""></a> </div>
+								</header>
+
+								<header>
+									<h2>Base de Dados</h2>
+									<p>O Weka nos permite trabalhar com diferentes fontes de dados.
+
+										Podemos importar dados a partir de uma consulta a um banco de dados relacional, a partir de uma URL ou através de arquivo de texto no formato arff.<br/>
+										
+										O formato ARFF significa Attribute-Relation File Format ou Arquivo no Formato Atributo Relação.<br/>
+										
+										Este formato de arquivo é especificado pelo Weka em um padrão muito simples divido basicamente em duas sessões Header (Cabeçalho) e Data (Dado).<br/>
+										
+										Na sessão Header temos a especificação dos atributos de nossa base de dados e seus tipos de dados incluindo a classe.<br/>
+										
+										Na sessão Data é onde informamos ao Weka os dados que constituem nossa base de dados.Observe que o nosso arquivo se inicia com a tag @RELATION que indica qual o nome de nossa base de dados.
+
+										O próximo passo é definir os atributos e seus tipos de dados utilizando a tag @ATTRIBUTE e por fim marcamos com a tag @DATA onde inicia os dados no arquivo.
+
+										Na definição dos atributos podemos especificar diferentes tipos de dados como numeric nominal, string e date. Como é o exemplo do atributo class que é do tipo nominal e possui os três valores únicos (Iris-setosa, Iris-versicolor, Iris-virginica). 
+										
+										Veja no exemplo abaixo o dataset iris no formato arff.<br/><br/></p>
+										<div> <a href="#" class="image full"><img src="images/iris-arff.png" alt=""></a> </div>
+										<p>Observe que o nosso arquivo se inicia com a tag @RELATION que indica qual o nome de nossa base de dados.<br/>
+
+											O próximo passo é definir os atributos e seus tipos de dados utilizando a tag @ATTRIBUTE e por fim marcamos com a tag @DATA onde inicia os dados no arquivo.<br/>
+											
+											Na definição dos atributos podemos especificar diferentes tipos de dados como numeric nominal, string e date. Como é o exemplo do atributo class que é do tipo nominal e possui os três valores únicos (Iris-setosa, Iris-versicolor, Iris-virginica).<br/><br/> </p>
+								</header>
+								<header>
+									<h2>Importando dados CSV</h2>
+									<p>O Weka nos permite importar dados a partir de outros formatos além do formato padrão ARFF.<br/><br/>
+
+										Neste caso o Weka se encarrega de carregar os dados com as devidas informações de atributos.<br/><br/>
+										
+										Veja na imagem abaixo a base de dados iris no formato csv.<br/><br/></p>
+										<div> <a href="#" class="image full"><img src="images/dataset-iris-csv.png" alt=""></a> </div>
+										<p>Para importar dados csv no Weka simplesmente informamos o formato na tela para abrir o arquivo de dados conforme animação abaixo.<br/><br/></p>
+										<div> <a href="#" class="image full"><img src="images/weka-importacao-csv.gif" alt=""></a> </div>
+								</header>
+								<header>
+									<h2>Consultando dados em um banco de dados MySQL</h2>
+									<p>magine aqueles dados do sistema de RH em suas mãos? Tabelas de salários, hora extra, etc.<br/>
+
+										Ou ainda, aqueles dados de vendas do ERP da empresa, daria para fazer um trabalho legal de ciência dos dados né ?<br/>
+										
+										(É claro que o objetivo aqui seria vender isso para seu chefe depois)<br/>
+										
+										Pois é…<br/>
+										
+										O Weka nos permite consultar dados diretamente em diversos SGBD’s através de um driver JDBC.<br/>
+										
+										Dessa forma facilita muito o acesso e manipulação dos dados que estão armazenados em um banco de dados relacional como o MySQL, Oracle, PostgreSQL etc.<br/>
+										
+										Através de uma query(consulta) podemos importar os dados retornados para o Weka e trabalhar normalmente com todos os filtros, métodos e classificadores sem a necessidade de gerar um arquivo de dados nos formatos acima.<br/>
+										
+										Você vai ver que é bem simples o processo.<br/>
+										
+										Como neste exemplo iremos utilizar o MySQL, faça o download do driver JDBC aqui.<br/>
+										
+										Após fazer o download do arquivo de driver coloque o arquivo .jar no mesmo diretório de instalação do Weka.<br/>
+										
+										Observe na imagem abaixo que o arquivo de driver de conexão mysql-connector-java-5.1.30-bin.jar está na mesmo diretório do arquivo weka.jar</p>
+										<div> <a href="#" class="image full"><img src="images/weka-mysql-connector.png" alt=""></a> </div>
+										<p>Depois de baixado o arquivo de driver o próximo passo é editar o script RunWeka.ini e incluir o nome do arquivo de driver ao classpath para a inicialização do Weka conforme imagem abaixo.</p>
+										<div> <a href="#" class="image full"><img src="images/weka-runweka-mysql-connector.png" alt=""></a> </div>
+										<p>Observe que a inclusão do nome do arquivo vem precedida de um ; (ponto e virgula).
+
+											Uma vez incluído o nome do arquivo de driver. Antes de inicializar o Weka precisamos configurar o arquivo DatabaseUtils.prop.</p>
+								</header>
+								<header>
+									<h2>Apontando o driver do SGBD</h2>
+									<p>Este arquivo define diversas configurações específicas sobre o SGBD que iremos nos conectar.
+
+										O Weka nos disponibiliza o arquivo DatabaseUtils.prop para vários SGBD´s e para acessar extraia o arquivo weka.jar e navegue até o diretório weka\experiment conforme imagem abaixo.</p>
+										<div> <a href="#" class="image full"><img src="images/weka-database-props.png" alt=""></a> </div>
+										<p>Escolha o arquivo conforme o sistema de gerenciamento de banco de dados desejado, reoneie para DatabaseUtils.props e salve no mesmo diretório do arquivo weka.jar.
+
+											Uma vez o arquivo foi incluido no diretório do Weka edite e configure as variáveis  JDBC Driver e database URL conforme imagem abaixo.</p>
+										<div> <a href="#" class="image full"><img src="images/weka-database-utils-config-mysql.png" alt=""></a> </div>
+								</header>
+								<header>
+									<h2>Aplicando algoritmos de Machine Learning</h2>
+									<div> <a href="#" class="image full"><img src="images/weka-algoritmos-machine-learning.jpg" alt=""></a> </div>
+									<p></p>
+										
+								</header>
+							</section>
+						</div>
+						<div class="3u">
+							<section id="sidebard2">
+								<!--<header>
+									<h2>Sidebar 2</h2>
+								</header>
+								<ul class="style1">
+									<li class="first"><span class="fa fa-check"></span><a href="#">Maecenas luctus lectus at sapien</a></li>
+									<li><span class="fa fa-check"></span><a href="#">Etiam rhoncus volutpat erat</a></li>
+									<li><span class="fa fa-check"></span><a href="#">Donec dictum metus in sapien</a></li>
+									<li><span class="fa fa-check"></span><a href="#">Integer gravida nibh quis urna</a></li>
+									<li><span class="fa fa-check"></span><a href="#">Etiam posuere augue sit amet nisl</a></li>
+									<li><span class="fa fa-check"></span><a href="#">Mauris vulputate dolor nibh</a></li>
+									<li><span class="fa fa-check"></span><a href="#">Nulla luctus eleifend purus</a></li>
+								</ul>
+								<a href="#" class="button">Full Article</a>>-->
+							</section>
+						</div>
+					</div>
+
+				</div>	
+			</div>
+
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<section id="box1">
+								<!-- <header>
+									<h2>Nulla facilisi</h2>
+								</header>
+								<ul class="style3">
+									<li class="first">
+										<p class="date"><a href="#">10.03.2012</a></p>
+										<p><a href="#">Vestibulum sem magna, elementum ut, vestibulum facilisis. Nulla facilisi. Cum sociis natoque penatibus.</a></p>
+									</li>
+									<li>
+										<p class="date"><a href="#">10.03.2012</a></p>
+										<p><a href="#">Pellentesque erat erat, tincidunt in, eleifend, malesuada bibendum. Suspendisse sit amet  in eros bibendum condimentum. </a> </p>
+									</li>
+								</ul> -->
+							</section>
+						</div>
+						<div class="6u">
+							<!--<section id="box2">
+								<header>
+									<h2></h2>
+								</header>
+								<div> <a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a> </div>
+								<p>Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Duis enim nulla, luctus eu, dapibus lacinia, venenatis id, quam. Vestibulum imperdiet, magna nec eleifend rutrum, nunc lectus vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl.</p>
+							</section>
+						</div>
+						<div class="3u">
+							<section id="box3">
+								<header>
+									<h2>Gravida ipsum</h2>
+								</header>
+								<ul class="style1">
+									<li class="first"><a href="#">Pellentesque quis elit non lectus eleifend purus condimentum.</a></li>
+									<li><a href="#">Lorem ipsum dolort, consectetuer adipiscing dictum metus sapien.</a></li>
+									<li><a href="#">Phasellus nec dictum metus in sapien pellentesque congue.</a></li>
+									<li><a href="#">Cras vitae metus aliquam risus dictum metus in sapien pharetra.</a></li>
+									<li><a href="#">Duis non dictum metus in sapien ante in metus commodo euismod lobortis.</a></li>
+								</ul> -->
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyright
+			<div id="copyright">
+				<div class="container">
+					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+				</div>
+			</div> -->
+			
+		</div>
+	</body>
+</html>
